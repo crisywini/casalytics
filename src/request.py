@@ -1,3 +1,5 @@
+import json
+
 import requests
 from requests import Response
 
@@ -57,4 +59,8 @@ def get_info_by_page(page: int) -> Response:
         """
     return  requests.post(url, data=data)
 
-print(get_info_by_page(1))
+def save_json_file(file_name: str, response: Response):
+    data = response.json()
+
+    with open(file_name, "w") as file:
+        json.dump(data, file)
