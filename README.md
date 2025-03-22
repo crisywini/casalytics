@@ -28,3 +28,5 @@ Things to consider:
 - The json has info such as links
 - The json has images (urls) 
 - The data that I will analyze would only consider prices, location and info from the home, such as number of rooms, and etcetera.
+
+take into account to have enough data
