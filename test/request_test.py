@@ -11,11 +11,11 @@ def test_get_all_info():
 
     # When
     response = get_info_by_page(page)
-
     hits = response.json()['hits']['hits']
 
     # Then
     assert response.status_code == 200
+    assert hits is not None
 
 
 def test_save_json():
